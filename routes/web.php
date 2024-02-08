@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[HomeController::class, 'home']);
 
 Route::get('/cursos',[CursoController::class, 'index']);
+Route::get('/cursos/create',[CursoController::class, 'create']);
 Route::get('/cursos/{curso}',[CursoController::class, 'show']);
 
-Route::get('/cursos/create',[CursoController::class, 'create']);
